@@ -8,7 +8,7 @@ node_modules
 *.sqlite3
 
 # Build products
-dist
+
 
 # Jest coverage report
 coverage

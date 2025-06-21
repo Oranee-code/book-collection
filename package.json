@@ -19,7 +19,7 @@
     "format": "prettier -w '**/*.{js,jsx,ts,tsx}'",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "render:build": "npm install && npm run build && npm prune --omit=dev && NODE_ENV='production' npm run knex migrate:latest",
+    "render:build": "npm install && npm run build && npm prune --omit=dev && NODE_ENV=production npm run knex migrate:latest && NODE_ENV=production npm run knex seed:run",
 "render:start": "node dist/server.js"
   },
   "keywords": [
